@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and login</title>
+    <link rel="stylesheet"  type="text/css" href="style_data.css">
+   
+</head>
+<body>
+    <div class="pop_up">
+        <div class="pop_head">
+            <div class="login_head" onclick="display_login();">Log in</div>
+            <div class="registration_head" onclick="display_reg();">Sign in</div>
+        </div>
+        <div class="login">
+            <form method="post" action="" required autocomplete="off" class="textfield">
+                <div class="text_field">
+                   <input type="text" name="usern" class="inputs inputtext"><label class="text">username</label>
+                </div>
+               <div class="text_field">
+                   <input type="password" name="passw" class="inputs inputps"><label class="text">password</label>
+                </div >
+                <div class="remember">
+                    <input type="checkbox" id="login_check" class="login_check"><label for="login_check" class="loginchecklbl">Remember me</label>
+                </div>
+                <input class="submit" type="submit"value="Login" onclick="link_firstpage();">
+                <div class="forgetp"><a>Forget your password? </a></div>
+                    <div class="query">
+                    <span >Not a member?</span>
+                    <span class="signuplink" ><a>Get Membership</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="reg_whole">
+            <div class="reg_box">
+               <form method="post" action=""  autocomplete="off" class="main_reg" onsubmit="validate();">
+                    <label class="name_lbl">Name</label><br/><input class="name" type="text" id="name"><span class="err one"></span><br/>
+                    <label class="phoneno_lbl">Phone Number</label><br/><input class="phoneno" type="text" id="phoneno" ><span class="err two"></span><br/>
+                    <label class="email_lbl">Email Address</label><br/><input class="email" type="text" id="email" ><span class="err three"></span><br/>
+                    <label class="username_lbl">Username</label><br/><input class="username" type="text" id="username"><span class="err four"></span><br/> 
+                    <label class="setpw_lbl">Set Password</label><br/><input class="setpw" type="password" id="setpw" ><span class="err five"></span><br/>
+                    <label class="confirmpw_lbl">Confirm Password</label><br/><input class="confirmpw" type="password" id="confirmpw" ><span class="err six"></span><br/>
+                    <input type="checkbox" class="check" id="check"><label for="check" class="check_lbl">Accept <span class="terms"> trems and conditions</span></label>  
+                    <br/><input type="submit" class="signup" value="Sign up" >
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="data_js.js"></script>
+</body>
