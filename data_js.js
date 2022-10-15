@@ -1,15 +1,19 @@
-var popup=document.getElementsByClassName(".pop_up");
-var displaylog =document.getElementsByClassName(".login");
-var displayreg =document.getElementsByClassName(".reg_whole");
-var reg_head = document.getElementsByClassName(".regestration_head");
+var popup=document.querySelector(".pop_up");
+var displaylog =document.querySelector(".login");
+var displayreg =document.querySelector(".reg_box");
+var reg_head = document.querySelector(".registration_head");
+var login_head = document.querySelector(".login_head");
+
 function display_login(){
-    reg_head.style.backgroundColor="rgb(171, 32, 60)";
+    login_head.style.backgroundColor= "rgb(172, 23, 53)";
+    reg_head.style.backgroundColor="bisque";
       displayreg.style.display="none";
-     displaylog.style.display="block";
+     displaylog.style.display="contents";
 }
 function display_reg(){
-
-    displayreg.style.display="block";
+    login_head.style.backgroundColor= "bisque";
+    reg_head.style.backgroundColor="rgb(172, 23, 53)";
+    displayreg.style.display="contents";
    displaylog.style.display="none";
 }
 var usernameInput = document.querySelector(".inputtext");
